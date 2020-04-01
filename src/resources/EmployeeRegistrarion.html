@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Registration</title>
+
+    <meta
+      name="description"
+      content="Source code generated using layoutit.com"
+    />
+    <meta name="author" content="LayoutIt!" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row gap-top"></div>
+      <div class="row">
+        <div class="col-md-2 sidenav">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+              <img
+                alt="Bootstrap Image Preview"
+                src="resources/UserIcon.png"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col-md-4 gap"></div>
+          </div>
+          <div class="row">
+            <div class="gap"></div>
+            <div class="col-md-12">
+              <button class="dropdown-btn">
+                Employee Information
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Register New Employee</a>
+                <a href="#">Fire an Employee</a>
+                <a href="#">Update Information</a>
+                <a href="">Check Employee Information</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="dropdown-btn">
+                Depertment Information
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Add New Depertment</a>
+                <a href="#">Calcel a Depertment</a>
+                <a href="#">Update Information</a>
+                <a href="">Check Infromation</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="dropdown-btn">
+                Leave Request
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Apply For a Leave</a>
+                <a href="#">Check Requests</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button class="dropdown-btn">
+                Complain Letter
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">File a Complain</a>
+                <a href="#">Check Complains</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 body-main">
+          <div class="row">
+            <div class="col-md-2 bgcustome"><h4>WELCOME "HR Manager"</h4></div>
+            <div class="col-md-8">
+              <ul class="nav nav-pills justify-content-end bgcustome">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Settings</a
+                  >
+                  <div
+                    class="dropdown-menu"
+                    style="background-color:DodgerBlue"
+                  >
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">Update Profile</a>
+                    <a class="dropdown-item" href="#">View Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 bgcustome"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 gap">
+              <h3 class="text-secondary">Register Employee</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <fieldset class="border border-secondary">
+                <div class="container">
+                  <!---------- -------------->
+                  <form>
+                    <h4 class="text-dark">Personal Information</h4>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">First Name</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Last Name</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress"
+                        placeholder="1234 Main St"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress2"
+                        placeholder="Apartment, studio, or floor"
+                      />
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Contact</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="Contact"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Alternative Phone</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Alternative"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" />
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">DOB</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">Religeon</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Gender</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <h4 class="text-dark">Company Information</h4>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">User Name</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="User Name"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Password"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <span class="input-group-text" id=""
+                          >Employee Level</span
+                        >
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="1">First Level</option>
+                          <option value="2">Mid Level</option>
+                          <option value="3">Top Level</option>
+                          <option value="3">HR</option>
+                          <option value="3">Intern</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <span class="input-group-text" id="">Dasignation</span>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="1">Supervisor</option>
+                          <option value="2">Team Leader</option>
+                          <option value="3">designation 1</option>
+                          <option value="3">designation 2</option>
+                          <option value="3">designation 3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <span class="input-group-text" id="">Depertment</span>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="1">Supervisor</option>
+                          <option value="2">Team Leader</option>
+                          <option value="3">designation 1</option>
+                          <option value="3">designation 2</option>
+                          <option value="3">designation 3</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Join Date</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Password"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Employee CV</span>
+                        </div>
+                        <div class="custom-file">
+                          <input
+                            type="file"
+                            class="custom-file-input"
+                            id="inputGroupFile01"
+                          />
+                          <label
+                            class="custom-file-label"
+                            for="inputGroupFile01"
+                            >Choose file</label
+                          >
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Picture</span>
+                        </div>
+                        <div class="custom-file">
+                          <input
+                            type="file"
+                            class="custom-file-input"
+                            id="inputGroupFile01"
+                          />
+                          <label
+                            class="custom-file-label"
+                            for="inputGroupFile01"
+                            >Choose file</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4 class="text-dark">Salary Information</h4>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Basic</span>
+                            <span class="input-group-text">$</span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Amount (to the nearest dollar)"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Insentive</span>
+                            <span class="input-group-text">$</span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Amount (to the nearest dollar)"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Bonus</span>
+                            <span class="input-group-text">%</span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Amount (to the nearest dollar)"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Benifits</span>
+                            <span class="input-group-text">$</span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Amount (to the nearest dollar)"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">TOTTAL</span>
+                            <span class="input-group-text">$</span>
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Amount (to the nearest dollar)"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" class="input-group-text"
+                          >Card Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState" class="input-group-text"
+                          >Card Number</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip" class="input-group-text"
+                          >Card Type</label
+                        >
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                      Register
+                    </button>
+                    <button type="cancel" class="btn btn-danger">
+                      Cancel
+                    </button>
+                  </form>
+                </div>
+              </fieldset>
+              <!----------    --------->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 gap"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 footer">
+          <h6>AIUB WebTech &copy;2020</h6>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

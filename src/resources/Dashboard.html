@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Leave Request</title>
+
+    <meta
+      name="description"
+      content="Source code generated using layoutit.com"
+    />
+    <meta name="author" content="LayoutIt!" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row gap-top"></div>
+      <div class="row">
+        <div class="col-md-2 sidenav">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+              <img
+                alt="Bootstrap Image Preview"
+                src="resources/UserIcon.png"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="col-md-4 gap"></div>
+          </div>
+          <div class="row">
+            <div class="gap"></div>
+            <div class="col-md-12 drpbtn">
+              <button class="dropdown-btn">
+                Employee Information
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Register New Employee</a>
+                <a href="#">Fire an Employee</a>
+                <a href="#">Update Information</a>
+                <a href="">Check Employee Information</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 drpbtn">
+              <button class="dropdown-btn">
+                Depertment Information
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Add New Depertment</a>
+                <a href="#">Calcel a Depertment</a>
+                <a href="#">Update Information</a>
+                <a href="">Check Infromation</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 drpbtn">
+              <button class="dropdown-btn">
+                Leave Request
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Apply For a Leave</a>
+                <a href="#">Check Requests</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 drpbtn">
+              <button class="dropdown-btn">
+                Complain Letter
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">File a Complain</a>
+                <a href="#">Check Complains</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 body-main">
+          <div class="row">
+            <div class="col-md-2 bgcustome"><h4>WELCOME "HR Manager"</h4></div>
+            <div class="col-md-8">
+              <ul class="nav nav-pills justify-content-end bgcustome">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Settings</a
+                  >
+                  <div
+                    class="dropdown-menu"
+                    style="background-color:DodgerBlue"
+                  >
+                    <a class="dropdown-item" href="#">Change Password</a>
+                    <a class="dropdown-item" href="#">Update Profile</a>
+                    <a class="dropdown-item" href="#">View Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 bgcustome"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 gap"></div>
+          </div>
+          <h3>Leave Request Status :</h3>
+          <br />
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-12">
+              <div class="container">
+                <nav class="navbar justify-content-end navbar-light bg-dark">
+                  <form class="form-inline">
+                    <input
+                      class="form-control mr-sm-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn btn-outline-success my-2 my-sm-0"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </nav>
+                <table class="table table-striped table-hover">
+                  <thead class="thead-dark"> 
+                    <tr>
+                      <th>
+                        #
+                      </th>
+                      <th>
+                        Employee
+                      </th>
+                      <th>
+                        Date
+                      </th>
+                      <th>
+                        Status
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-success">
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        TB - Monthly
+                      </td>
+                      <td>
+                        01/04/2012
+                      </td>
+                      <td>
+                        Approved
+                      </td>
+                    </tr>
+                    <tr class="table-success">
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        TB - Monthly
+                      </td>
+                      <td>
+                        01/04/2012
+                      </td>
+                      <td>
+                        Approved
+                      </td>
+                    </tr>
+                    <tr class="table-danger">
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        TB - Monthly
+                      </td>
+                      <td>
+                        02/04/2012
+                      </td>
+                      <td>
+                        Declined
+                      </td>
+                    </tr>
+                    <tr class="table-success">
+                      <td>
+                        3
+                      </td>
+                      <td>
+                        TB - Monthly
+                      </td>
+                      <td>
+                        03/04/2012
+                      </td>
+                      <td>
+                        Approved
+                      </td>
+                    </tr>
+                    <tr class="table-danger">
+                      <td>
+                        4
+                      </td>
+                      <td>
+                        TB - Monthly
+                      </td>
+                      <td>
+                        04/04/2012
+                      </td>
+                      <td>
+                        Declined
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+          <h3>
+            Pending Request :
+          </h3>
+          <br />
+          <br />
+          <br />
+          <div class="container">
+            <nav class="navbar navbar-dark bg-dark justify-content-end">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </nav>
+            <table class="table table-striped table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th>
+                    #
+                  </th>
+                  <th>
+                    Employee
+                  </th>
+                  <th>
+                    Date
+                  </th>
+                  <th>
+                    Status
+                  </th>
+                  <th>
+                    Decline
+                  </th>
+                  <th>
+                    Reason
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    01/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    01/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Vacetion
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    02/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    03/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    4
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    04/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="container">
+            <nav class="navbar navbar-dark bg-dark justify-content-end">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </nav>
+            <table class="table table-striped table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th>
+                    #
+                  </th>
+                  <th>
+                    Employee
+                  </th>
+                  <th>
+                    Date
+                  </th>
+                  <th>
+                    Status
+                  </th>
+                  <th>
+                    Decline
+                  </th>
+                  <th>
+                    Reason
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    01/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    01/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Vacetion
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    02/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    03/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+                <tr class="table-warning">
+                  <td>
+                    4
+                  </td>
+                  <td>
+                    TB - Monthly
+                  </td>
+                  <td>
+                    04/04/2012
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-success">Approve</button>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-danger">Calcel</button>
+                  </td>
+                  <td>
+                    Sick
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="gap"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 footer">
+          <h6>AIUB WebTech &copy;2020 </h6>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
